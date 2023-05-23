@@ -69,7 +69,4 @@
     </div>
     <!-- /.banner_main -->
 </main>
-
-
-
 @endsection

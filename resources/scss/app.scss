@@ -73,3 +73,53 @@ main {
         }
     }
 }
+
+#app_footer {
+    #footer_top {
+        min-height: 370px;
+        background-image: url(../../resources/images/footer-bg.jpg);
+
+        #logo_bg_main {
+            background-image: url(../../resources/images/dc-logo-bg.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        ul {
+            list-style: none;
+
+            h4 {
+                font-weight: bold;
+            }
+
+            a {
+                text-decoration: none;
+                color: rgba(128, 128, 128, 1);
+            }
+
+            a:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+    }
+
+    #footer_bottom {
+        background-color: rgba(48, 48, 48, 1);
+        min-height: 110px;
+
+        .col {
+            height: 110px;
+
+            .my_btn {
+                border: 2px solid rgba(2, 130, 249, 1);
+                border-radius: 0;
+                color: white;
+                padding: 0.5rem;
+            }
+
+            p {
+                color: rgba(2, 130, 249, 1);
+            }
+        }
+    }
+}
