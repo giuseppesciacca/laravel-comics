@@ -14,7 +14,31 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $comics = config('comics');
+    $data = [
+        'banner' => [
+            [
+                'text' => 'DIGITAL COMICS',
+                'src' => 'buy-comics-digital-comics.png'
+            ],
+            [
+                'text' => 'DC MERCHANDISE',
+                'src' => 'buy-comics-merchandise.png'
+            ],
+            [
+                'text' => 'SUBSCRIPTION',
+                'src' => 'buy-comics-subscriptions.png'
+            ],
+            [
+                'text' => 'COMIC SHOP LOCATOR',
+                'src' => 'buy-comics-shop-locator.png'
+            ],
+            [
+                'text' => 'DC POWER VISA',
+                'src' => 'buy-dc-power-visa.svg'
+            ],
+        ],
+        'comics' => config('comics')
+    ];
 
-    return view('home', compact('comics'));
+    return view('home', $data);
 });

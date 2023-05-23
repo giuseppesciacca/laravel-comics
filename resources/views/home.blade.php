@@ -36,30 +36,12 @@
         <div class="container">
             <div class="row text-white align-items-center px-5">
 
+                @foreach ($banner as $item)
                 <div class="col-12 col-md-6 col-lg d-flex align-items-center py-3 p-lg-0">
-                    <img class="img-fluid" src="{{ Vite::asset('resources/images/buy-comics-digital-comics.png') }}" alt="">
-                    <p class="ps-3 m-0">DIGITAL COMICS</p>
+                    <img class="img-fluid" src="{{ Vite::asset('resources/images/'). $item['src'] }}" alt="">
+                    <p class="ps-3 m-0">{{ $item['text'] }}</p>
                 </div>
-
-                <div class="col-12 col-md-6 col-lg d-flex align-items-center py-3 p-lg-0">
-                    <img class="img-fluid" src="{{ Vite::asset('resources/images/buy-comics-merchandise.png') }}" alt="">
-                    <p class="ps-3 m-0">DC MERCHANDISE</p>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg d-flex align-items-center py-3 p-lg-0">
-                    <img class="img-fluid" src="{{ Vite::asset('resources/images/buy-comics-subscriptions.png') }}" alt="">
-                    <p class="ps-3 m-0">SUBSCRIPTION</p>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg d-flex align-items-center py-3 p-lg-0">
-                    <img class="img-fluid" src="{{ Vite::asset('resources/images/buy-comics-shop-locator.png') }}" alt="">
-                    <p class="ps-3 m-0">COMIC SHOP LOCATOR</p>
-                </div>
-
-                <div class="col-12 col-md-6 col-lg d-flex align-items-center py-3 p-lg-0">
-                    <img class="img-fluid" src="{{ Vite::asset('resources/images/buy-dc-power-visa.svg') }}" alt="">
-                    <p class="ps-3 m-0">DC POWER VISA</p>
-                </div>
+                @endforeach
                 <!-- /.cols -->
 
             </div>
