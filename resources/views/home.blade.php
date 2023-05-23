@@ -16,8 +16,10 @@
 
         <div class="row">
 
-            <div class="col-6 col-md-4 col-lg-2" v-for="card in dataCards">
-                <CardImg :thumb="card.thumb" :series="card.series"></CardImg>
+            <div class="col-6 col-md-4 col-lg-2">
+                <img class="img-fluid" src="thumb" alt="">
+
+                <p class="py-3"></p>
             </div>
 
             <div class="d-flex justify-content-center">

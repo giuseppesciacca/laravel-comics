@@ -9,9 +9,7 @@
 
             <nav class="navbar navbar-expand col-12 col-md-7 col-lg-7 p-0">
                 <ul class="nav navbar-nav ">
-                    <!-- <li v-for="link in linkMenu" class="nav-item d-flex align-items-center">
-                        <a class="nav-link" :href="link.src">{{ link.text }}</a>
-                    </li> -->
+
                 </ul>
             </nav>
             <!-- /header right -->

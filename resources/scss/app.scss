@@ -1,1 +1,57 @@
 @import '~bootstrap/scss/bootstrap';
+
+/* $primary: rgba(2, 130, 249, 1);
+$secondary: rgba(48, 48, 48, 1);
+$dark: rgba(28, 28, 28, 1);
+$lighter: rgba(255, 255, 255, 1);
+$linkFooter: rgba(128, 128, 128, 1);
+$darkLight: rgba(70, 70, 73, 1); */
+
+#app_header {
+    .logo img {
+        height: 80px;
+    }
+
+    li {
+        height: 120px;
+    }
+
+    a {
+        color: rgba(70, 70, 73, 1);
+        font-weight: 600;
+    }
+
+    li:hover {
+        border-bottom: 5px solid rgba(2, 130, 249, 1);
+        cursor: pointer;
+    }
+
+    li:hover a {
+        color: rgba(2, 130, 249, 1);
+        margin-bottom: -5px;
+    }
+}
+
+
+main {
+    background-color: rgba(28, 28, 28, 1);
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+#current_series {
+    top: -60px;
+    left: 0;
+}
+
+.jumbotron {
+    background-image: url(../../resources/images/jumbotron.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
