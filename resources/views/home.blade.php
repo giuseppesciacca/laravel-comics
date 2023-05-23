@@ -16,11 +16,13 @@
 
         <div class="row">
 
+            @foreach ($comics as $comic)
             <div class="col-6 col-md-4 col-lg-2">
-                <img class="img-fluid" src="thumb" alt="">
+                <img class="img-fluid" src="{{$comic['thumb']}}" alt="">
 
-                <p class="py-3"></p>
+                <p class="py-3">{{$comic['title']}}</p>
             </div>
+            @endforeach
 
             <div class="d-flex justify-content-center">
                 <button class="btn btn-primary rounded-0 d-inline">LOAD MORE</button>
