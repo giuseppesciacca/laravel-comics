@@ -40,22 +40,36 @@ $darkLight: rgba(70, 70, 73, 1); */
 main {
     background-color: rgba(28, 28, 28, 1);
 
+    .jumbotron {
+        background-image: url(../../resources/images/jumbotron.jpg);
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #current_series {
+        top: -60px;
+        left: 0;
+    }
+
     img {
         width: 200px;
         height: 200px;
         object-fit: cover;
         object-position: top;
     }
-}
 
-#current_series {
-    top: -60px;
-    left: 0;
-}
+    .banner_main {
+        background-color: rgba(2, 130, 249, 1);
+        min-height: 150px;
 
-.jumbotron {
-    background-image: url(../../resources/images/jumbotron.jpg);
-    height: 400px;
-    background-repeat: no-repeat;
-    background-size: cover;
+        img {
+            height: 60px;
+            object-fit: contain;
+        }
+
+        div:last-child>img {
+            width: 55px;
+        }
+    }
 }
